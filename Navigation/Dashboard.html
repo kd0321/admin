@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard — Triple Action Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg:#0b0e14; --panel:#111622; --ink:#e6ebf7; --muted:#9aa6c5; --line:#1c2233;
+      --brand:#3ea6ff; --accent:#00e07b; --shadow:0 12px 30px rgba(5,10,20,.35);
+      --r:14px;
+    }
+
+    body {
+      margin:0;
+      min-height:100vh;
+      background:linear-gradient(135deg,#0b0e14 40%,#1a2235 100%);
+      color:var(--ink);
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      padding:40px 20px;
+    }
+
+    h1 {
+      font-size:26px;
+      margin-bottom:32px;
+      text-align:center;
+    }
+
+    .grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:24px;
+      width:100%;
+      max-width:900px;
+    }
+
+    .tile {
+      background:var(--panel);
+      border:1px solid var(--line);
+      border-radius:var(--r);
+      box-shadow:var(--shadow);
+      text-align:center;
+      padding:40px 20px;
+      font-weight:600;
+      cursor:pointer;
+      transition:transform .15s ease,box-shadow .15s ease,background .2s ease;
+      text-decoration:none;
+      color:var(--ink);
+    }
+
+    .tile:hover {
+      transform:translateY(-4px);
+      box-shadow:0 10px 20px rgba(0,0,0,.4);
+      background:#151b2d;
+    }
+
+    .tile span {
+      display:block;
+      font-size:15px;
+      margin-top:8px;
+      color:var(--muted);
+    }
+
+    footer {
+      margin-top:50px;
+      font-size:13px;
+      color:var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <h1>Triple Action Dashboard</h1>
+
+  <div class="grid">
+    <a href="bookkeeping.html" class="tile">
+      📘 Bookkeeping
+      <span>Track income, expenses & invoices</span>
+    </a>
+    <a href="crm.html" class="tile">
+      📋 CRM
+      <span>Manage leads, clients & deals</span>
+    </a>
+    <a href="ai-receptionist.html" class="tile">
+      🤖 AI Receptionist
+      <span>Automated call & chat handling</span>
+    </a>
+    <a href="calendar.html" class="tile">
+      📅 Calendar
+      <span>Appointments & scheduling</span>
+    </a>
+    <a href="team-chat.html" class="tile">
+      💬 Team Chat
+      <span>Internal communication</span>
+    </a>
+    <a href="referrals.html" class="tile">
+      🤝 Referral List
+      <span>Track and manage referrals</span>
+    </a>
+    <a href="umami.html" class="tile">
+      📈 Umami Analytics
+      <span>Monitor your traffic stats</span>
+    </a>
+    <a href="visitors.html" class="tile">
+      🌐 Visitor Tracking
+      <span>Live website visitor activity</span>
+    </a>
+  </div>
+
+  <footer>© 2025 Triple Action Solutions</footer>
+</body>
+</html>
