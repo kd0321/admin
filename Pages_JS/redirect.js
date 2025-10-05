@@ -16,7 +16,7 @@
       //  - one level up:  '../dashboard.html'
       //
       // Change the path below to the correct relative/absolute location:
-      window.location.href = 'dashboard.html';
+      window.location.href = 'Navigation/dashboard.html';
     });
   })();
 
